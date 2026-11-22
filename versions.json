@@ -1,0 +1,47 @@
+{
+  "latest": "1.1.4d",
+  "versions": [
+    {
+      "version": "1.1.4d",
+      "date": "22.11.2026",
+      "file": "versions/HWaW_Edition_v1.1.4d.zip",
+      "sha256": "ace028aaaeb8f59de5c2bd345011eb60bacb38c439ec3631d5547a26c5dbf50e",
+      "bytes": 34230729
+    },
+    {
+      "version": "1.1.3d",
+      "date": "22.11.2026",
+      "file": "versions/HWaW_Edition_v1.1.3d.zip",
+      "sha256": "eab90b4b9409e2b5b512319e5994b61fd5b1b06d93181c8b009a414f5e740d12",
+      "bytes": 34230105
+    },
+    {
+      "version": "1.1.2d",
+      "date": "22.11.2026",
+      "file": "versions/HWaW_Edition_v1.1.2d.zip",
+      "sha256": "e9e1612c5addd0471de5f69a15026ac459e8dbfc2ba56d6d57f7a5da2e14e151",
+      "bytes": 34235158
+    },
+    {
+      "version": "1.1.1d",
+      "date": "20.11.2026",
+      "file": "versions/HWaW_Edition_v1.1.1d.zip",
+      "sha256": "a7d4a96cf37b24d86daefb5a2d6d4edb5be65355c1ce77a587952414503a110a",
+      "bytes": 34225328
+    },
+    {
+      "version": "1.1.0d",
+      "date": "14.11.2026",
+      "file": "versions/HWaW_Edition_v1.1.0d.zip",
+      "sha256": "70282461b2b05e806adc255676a59a14961277b4cc5541b575da31ec08169e4d",
+      "bytes": 34224933
+    },
+    {
+      "version": "1.0d",
+      "date": "29.10.2026",
+      "file": "versions/HWaW_Edition_v1.0d.zip",
+      "sha256": "6658777fd2b53168f74d0cf6f74975b2fe82eb4c6370e9f307c167c790bbe9a3",
+      "bytes": 33404451
+    }
+  ]
+}
