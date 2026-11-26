@@ -29,6 +29,10 @@
     .page-nav a[aria-current="page"]::after { content: ""; position: absolute; inset: auto 16px -1px; height: 1px; background: var(--fg); }
     .thanks-content { min-height: 220px; padding-top: 12px; animation: arrive .8s var(--ease) both; }
     .thanks-content h2 { margin: 0; font-size: clamp(24px, 5vw, 36px); line-height: 1.25; font-weight: 500; letter-spacing: -.04em; }
+    .thanks-list { list-style: none; margin: 28px 0 0; padding: 0; border-top: 1px solid var(--line); }
+    .thanks-list li { padding: 20px 0; border-bottom: 1px solid var(--line); }
+    .thanks-list strong { display: block; font-size: 18px; font-weight: 500; }
+    .thanks-list span { display: block; margin-top: 4px; color: var(--muted); }
     .section-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 17px; gap: 16px; color: var(--muted); }
     .section-top h2 { margin: 0; font: inherit; }
     .current { position: relative; border: 1px solid #494949; padding: 36px; overflow: hidden; background: linear-gradient(120deg, #181818, #0d0d0d 65%); transition: border-color .5s, transform .5s var(--ease); }
@@ -121,7 +125,13 @@
       <h1><img class="logo" src="assets/logo.png" alt="Plants vs. Zombies: HWaW Edition" width="490"></h1>
     </section>
     <nav class="page-nav" aria-label="Разделы сайта"><a href="index.html">Скачивания</a><a href="thanks.html" aria-current="page">Отдельная благодарность</a></nav>
-    <section class="thanks-content" aria-labelledby="thanks-title"><h2 id="thanks-title">Отдельная благодарность</h2></section>
+    <section class="thanks-content" aria-labelledby="thanks-title">
+      <h2 id="thanks-title">Отдельная благодарность</h2>
+      <ul class="thanks-list">
+        <li><strong>Unichekkk</strong><span>За плейтест мода.</span></li>
+        <li><strong>Wonder Salve</strong><span>За реакцию на некоторых зомби на стриме.</span></li>
+      </ul>
+    </section>
     <footer><div class="footer-notice"><p>HWaW Edition — рабочее название мода, не окончательное.</p><p>Мод не связан с Electronic Arts и PopCap и не одобрен ими.</p><p>Мод не связан с ютубером How, What And Why и не разрабатывается им.</p></div><a href="https://github.com/CattaiLq/hwaw-edition" target="_blank" rel="noopener noreferrer">GitHub</a></footer>
   </main>
 </body>
