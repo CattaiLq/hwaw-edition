@@ -1,0 +1,50 @@
+name: Баг
+description: Ошибка в работе мода без вылета игры. Скриншот обязателен.
+title: "[Баг] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Опиши одну ошибку в одном отчёте и обязательно прикрепи скриншот, на котором она видна.
+        Если игра закрылась с ошибкой, выбери форму «Вылет игры» — там нужно приложить краш-текст.
+  - type: input
+    id: version
+    attributes:
+      label: Версия мода
+      placeholder: Например, 1.1.6d
+    validations:
+      required: true
+  - type: input
+    id: level
+    attributes:
+      label: Уровень или режим
+      placeholder: Например, 2-6, мини-игра или главное меню
+    validations:
+      required: true
+  - type: textarea
+    id: bug
+    attributes:
+      label: Что произошло и что должно было произойти
+      description: Опиши сам баг и ожидаемое поведение.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как повторить ошибку
+      description: Перечисли действия по порядку. Если повторить не удалось, напиши, что делал перед ошибкой.
+    validations:
+      required: true
+  - type: upload
+    id: screenshot
+    attributes:
+      label: Скриншот ошибки или бага
+      description: Обязательно загрузи изображение, на котором видна проблема. PNG, JPG, GIF или WebP, до 10 МБ.
+    validations:
+      required: true
+      accept: ".png,.jpg,.jpeg,.gif,.webp"
+  - type: textarea
+    id: extra
+    attributes:
+      label: Дополнительная информация
+      description: При необходимости укажи активные читы, режим extreme или приложи видео.

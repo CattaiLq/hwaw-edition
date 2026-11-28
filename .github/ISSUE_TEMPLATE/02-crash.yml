@@ -1,0 +1,54 @@
+name: Вылет игры
+description: Игра вылетает или не запускается. Обязательны скриншот и краш-текст.
+title: "[Вылет] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Обязательно прикрепи скриншот ошибки и краш-текст.
+        Файл crash.txt находится в папке игры рядом с её exe-файлом. Загружай файл после того вылета, о котором сообщаешь.
+        Если crash.txt не создался, скопируй полный текст окна ошибки в отдельный файл .txt и прикрепи его, указав это в описании.
+  - type: input
+    id: version
+    attributes:
+      label: Версия мода
+      placeholder: Например, 1.1.6d
+    validations:
+      required: true
+  - type: input
+    id: level
+    attributes:
+      label: Уровень или момент вылета
+      placeholder: Например, при запуске игры или на последней волне 2-6
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Что произошло перед вылетом
+      description: Опиши действия по порядку и укажи, повторяется ли вылет. Если были включены читы или extreme, напиши об этом.
+    validations:
+      required: true
+  - type: textarea
+    id: system
+    attributes:
+      label: Компьютер и Windows
+      description: Укажи версию Windows и модель видеокарты. Если не знаешь модель, так и напиши.
+    validations:
+      required: true
+  - type: upload
+    id: screenshot
+    attributes:
+      label: Скриншот ошибки
+      description: Обязательно загрузи снимок окна ошибки целиком. PNG, JPG, GIF или WebP, до 10 МБ.
+    validations:
+      required: true
+      accept: ".png,.jpg,.jpeg,.gif,.webp"
+  - type: upload
+    id: crash_text
+    attributes:
+      label: Краш-текст
+      description: Обязательно загрузи crash.txt из папки игры или файл .txt с полным текстом окна ошибки. TXT или LOG, до 25 МБ.
+    validations:
+      required: true
+      accept: ".txt,.log"

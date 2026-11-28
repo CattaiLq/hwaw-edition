@@ -24,6 +24,7 @@
     .logo { display: block; width: 100%; height: auto; filter: grayscale(1); animation: float 7s 1.5s ease-in-out infinite; }
     .page-nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; border-bottom: 1px solid var(--line); }
     .page-nav a { position: relative; padding: 12px 16px; color: var(--muted); font-size: 14px; transition: color .3s, background .3s; }
+    .page-nav .report-link { color: var(--fg); border: 1px solid var(--line); margin-bottom: 8px; }
     .page-nav a:hover { color: var(--fg); background: #ffffff05; }
     .page-nav a[aria-current="page"] { color: var(--fg); }
     .page-nav a[aria-current="page"]::after { content: ""; position: absolute; inset: auto 16px -1px; height: 1px; background: var(--fg); }
@@ -121,7 +122,7 @@
     <section class="hero" aria-label="Plants vs. Zombies: HWaW Edition">
       <h1><img class="logo" src="assets/logo.png" alt="Plants vs. Zombies: HWaW Edition" width="490"></h1>
     </section>
-    <nav class="page-nav" aria-label="Разделы сайта"><a href="index.html" aria-current="page">Скачивания</a><a href="thanks.html">Отдельная благодарность</a></nav>
+    <nav class="page-nav" aria-label="Разделы сайта"><a href="index.html" aria-current="page">Скачивания</a><a href="thanks.html">Отдельная благодарность</a><a class="report-link" href="https://github.com/CattaiLq/hwaw-edition/issues/new/choose" target="_blank" rel="noopener noreferrer">Сообщить об ошибке</a></nav>
     <section id="versions" aria-label="Скачать мод">
       <div class="section-top mono reveal"><h2>Последний релиз</h2><span>28.11.2026</span></div>
       <div class="current reveal">
